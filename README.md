@@ -44,7 +44,7 @@ The CSS-files to extract critical CSS. **Must** be included in options.
 Type: `string` or `array`
 Default: none
 
-`exclude` will ignore any of the given files in the final selection. It's also possible to surpress this option and append a minimatch-negated `!`-prefixed file to the final selection.
+`exclude` will ignore any of the given files in the final selection. It's also possible to surpress this option and append a minimatch-negated `!`-prefixed file name to the final selection.
 
 ### other options
 For other options, please look up the [criticalcss](https://github.com/filamentgroup/criticalCSS) docs.
