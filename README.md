@@ -51,8 +51,8 @@ For other options, please look up the [criticalcss](https://github.com/filamentg
 
 ### Demo
 
-'''javascript
-'criticalcss-inline': {
+```javascript
+"criticalcss-inline": {
   test: {
     options: {
       htmlroot: 'test',
@@ -62,7 +62,7 @@ For other options, please look up the [criticalcss](https://github.com/filamentg
     src: '**/*.html'
   }
 }
-'''
+```
 
 ## License
 Copyright (c) 2015 Sascha Zarhuber. Licensed under the MIT license.
