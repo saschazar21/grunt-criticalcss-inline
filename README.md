@@ -35,7 +35,7 @@ Default: `./`
 `htmlroot` points Grunt to the working directory where your HTML-files are stored. Default value is the directory of your Gruntfile.js.
 
 #### cssfiles 
-Type: `string` or `array``
+Type: `string` or `array`
 Required: true
 
 The CSS-files to extract critical CSS. **Must** be included in options.
