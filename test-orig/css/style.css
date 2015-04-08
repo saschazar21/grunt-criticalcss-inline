@@ -1,0 +1,31 @@
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 18pt;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: Times, serif;
+  font-size: 12pt;
+}
+
+#motown {
+  background-color: aqua;
+  color: white;
+  font-weight: bold;
+}
+
+#offer-body {
+  padding: 10%;
+  color: brown;
+  text-decoration: underline;
+}
+
+#private-body {
+  padding: 20%;
+}
+
+.index-headline {
+  font-weight: bold;
+  text-decoration: underline;
+}
