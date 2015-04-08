@@ -16,7 +16,7 @@ module.exports = function(grunt) {
       test: {
         options: {
           htmlroot: 'test',
-          cssFiles: ['css/*.css'],
+          cssfiles: ['css/*.css'],
           exclude: '../node_modules/**/*.html'
         },
         src: '**/*.html'

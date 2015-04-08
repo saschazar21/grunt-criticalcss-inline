@@ -24,7 +24,7 @@ module.exports = function(grunt) {
     }
     
     // Check if CSS files are set
-    if (!options.cssFiles) {
+    if (!options.cssfiles) {
       grunt.log.fail('No CSS-file specified! Aborting...');
       return false;
     }
@@ -53,7 +53,7 @@ module.exports = function(grunt) {
     htmlFiles = grunt.file.expand(htmlFiles);
 
     // Get real file paths from given CSS file names
-    cssFiles = grunt.file.expand(options.cssFiles);
+    cssFiles = grunt.file.expand(options.cssfiles);
     
     // Concat given CSS files into one string
     cssConcat = '';
