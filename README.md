@@ -2,7 +2,7 @@
 
 
 
-## Getting Started
+## Getting Started [![Build Status](https://travis-ci.org/saschazar21/grunt-criticalcss-inline.svg?branch=master)](https://travis-ci.org/saschazar21/grunt-criticalcss-inline)
 This plugin requires Grunt `>=0.4.5`
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
@@ -68,5 +68,4 @@ For other options, please look up the [criticalcss](https://github.com/filamentg
 Copyright (c) 2015 Sascha Zarhuber. Licensed under the MIT license.
 
 ## Version History
-**v.0.1.0** - Included cssmin
-**v.0.0.1** - First test-ready version
+**v.0.1.0** - Included cssmin  **v.0.0.1** - First test-ready version
