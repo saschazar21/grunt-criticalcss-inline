@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "A Grunt task for extracting critical CSS and inlining it into HTML for performant loading.",
   "keywords": ["grunt", "grunttask", "uncss", "inline", "css", "html", "jekyll", "static"],
+  "scripts": {
+    "test": "grunt --verbose"
+  },
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
