@@ -66,3 +66,7 @@ For other options, please look up the [criticalcss](https://github.com/filamentg
 
 ## License
 Copyright (c) 2015 Sascha Zarhuber. Licensed under the MIT license.
+
+## Version History
+**v.0.1.0** - Included cssmin
+**v.0.0.1** - First test-ready version

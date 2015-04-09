@@ -2,6 +2,7 @@
 var fs = require('fs');
 var chalk = require('chalk');
 var criticalCSS = require('criticalcss');
+var cssmin = require('cssmin');
 
 module.exports = function(grunt) {
   grunt.registerMultiTask('criticalcss-inline', 'Extract critical CSS into your HTML', function() {
@@ -55,7 +56,7 @@ module.exports = function(grunt) {
     // Get real file paths from given CSS file names
     cssFiles = grunt.file.expand(options.cssfiles);
     
-    // Concat given CSS files into one string
+    // Concat given CSS files into one string and minify
     cssConcat = '';
     cssFiles.forEach(function(css) {
       cssConcat += grunt.file.read(css, {encoding: 'utf8'});
@@ -68,7 +69,6 @@ module.exports = function(grunt) {
         grunt.log.fail('Error: ' + err);
       } else {
         options.rules = JSON.parse(output);
-        fs.writeFileSync('/tmp/temp_json.json', JSON.stringify(output), {encoding: 'utf8'});
         // Finally, do the magic
         htmlFiles.forEach(function(htmlFile, i) {
           criticalCSS.findCritical(htmlFile, options, function(err, output) {
@@ -76,7 +76,7 @@ module.exports = function(grunt) {
               grunt.log.fail('Error: ' + err);
               grunt.log.writeln(chalk.red('Error: '), htmlFile);
             } else {
-              output = '<style type="text/css">' + output + '</style>';
+              output = '<style type="text/css">' + cssmin(output) + '</style>';
 
               // Replace comment with critical CSS
               var htmlStr = grunt.file.read(htmlFile, {encoding: 'utf8'});
