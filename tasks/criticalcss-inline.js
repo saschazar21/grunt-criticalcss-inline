@@ -80,7 +80,7 @@ module.exports = function(grunt) {
 
               // Replace comment with critical CSS
               var htmlStr = grunt.file.read(htmlFile, {encoding: 'utf8'});
-              htmlStr = htmlStr.replace(/(<\!\-{2}\s*criticalcss-style\s*\-{2}>)/i, output);
+              htmlStr = htmlStr.replace(/(<\!\-{2}\s*critical-css\s*\-{2}>)/i, output);
               grunt.file.write(htmlFile, htmlStr, {encoding: 'utf8'});
 
               grunt.log.writeln(chalk.green('OK: '), htmlFile);
