@@ -1,6 +1,6 @@
 {
   "name": "grunt-criticalcss-inline",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A Grunt task for extracting critical CSS and inlining it into HTML for performant loading.",
   "keywords": ["grunt", "grunttask", "uncss", "inline", "css", "html", "jekyll", "static"],
   "scripts": {
