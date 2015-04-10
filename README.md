@@ -23,7 +23,7 @@ grunt.loadNpmTasks('grunt-criticalcss-inline');
 _Run this task with the `grunt criticalcss-inline`command._
 
 ### Usage
-Wherever you want to include critical CSS, place a `<!-- critical-css -->` comment, or a `<style type="text/css" data-inline="critical-css"> </style>` (Mind the empty space between the tags, of nothing else included) in your HTML-files. This task will look for the first available pattern of both above. Please be aware; with every task run, the contents of the first of these patterns gets overwritten!
+Wherever you want to include critical CSS, place a `<!-- critical-css -->` comment, or a `<style type="text/css" data-inline="critical-css"> </style>` _- (Mind the empty space between the tags, if nothing else included)_ in your HTML-files. This task will look for the first available pattern of both above. Please be aware; with every task run, the contents of the first of these patterns gets overwritten!
 
 ### Options
 Options are passed to [criticalcss](https://github.com/filamentgroup/criticalCSS).
